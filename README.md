@@ -15,7 +15,7 @@ Open a terminal within the repository directory.
 
 Run the following:
 ```
-./setup-triggermesh.sh
+./DockerDesktop.sh
 ```
 
 **Note** you may need to run `chmod +x ./setup-triggermesh.sh` before executing.
