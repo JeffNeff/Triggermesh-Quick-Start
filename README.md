@@ -18,7 +18,7 @@ Run the following:
 ./DockerDesktop.sh
 ```
 
-**Note** you may need to run `chmod +x ./setup-triggermesh.sh` before executing.
+**Note** you may need to run `chmod +x ./DockerDesktop.sh` before executing.
 
 ## Next steps.
 
