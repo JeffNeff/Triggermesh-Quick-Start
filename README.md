@@ -1,17 +1,15 @@
 # Triggermesh Quick Install
 Quickly install Triggermesh on a fresh cluster for development and testing purposes.
 
-**Note** This has only been tested on the following platforms:
-```
-- Kubernetes in Docker Desktop (on intel mac)
--
-```
+## Docker Desktop
+### Prerequisites
 
-## Getting Started
+- Docker Desktop with Kubernetes enabled.
 
+### Install Triggermesh
 Clone or download this repository.
 
-Open a terminal within the repository directory.
+Open a terminal within the `./Install/DockerDesktop` folder.
 
 Run the following:
 ```
@@ -22,4 +20,12 @@ Run the following:
 
 ## Next steps.
 
-Check out the `./Next-Steps` dirctory for things to play with :)
+Check out the `./Next-Steps` dirctory for a structured introduction to Triggermesh components.
+
+Or, if you are a Kubernetes master, jump right in by checking out the `./Triggermesh-Components` directory and start playing right away!
+
+
+## Known issues / FAQ
+
+- There seems to be a problem with Docker Desktop not releasing port 31080 after tearing down/restarting the cluster.
+    Fix: Restart your computer.
