@@ -14,3 +14,5 @@ The next steps are broken down into individual folders within this repository. T
 `./Step5/AdvancedRouting/` - Use one of the Triggermesh event routing mechanisms to route events.
 
 `./Step6/Testing/` - Use the Triggermesh testing framework to test your Triggermesh components.
+
+`./Step7/BringYourOwn/` - Bring your own data to the Triggermesh ecosystem.
