@@ -1,5 +1,6 @@
-# Triggermesh Quick Install
-Quickly install Triggermesh on a fresh cluster for development and testing purposes.
+# Triggermesh Quick Start
+
+Quickly install Triggermesh on a fresh cluster for development and testing purposes, and then get up to speed with a step-by-step introduction to the individual Triggermesh components. 
 
 ## Docker Desktop
 ### Prerequisites
