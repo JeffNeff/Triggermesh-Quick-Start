@@ -4,6 +4,13 @@ set -eo pipefail
 set -u
 
 KONK_MINIKUBE_BRANCH=${KONK_MINIKUBE_BRANCH:-master}
+KNATIVE_NET=${KNATIVE_NET:-kourier}
+KNATIVE_VERSION=${KNATIVE_VERSION:-1.2.2}
+KNATIVE_EVENTING_VERSION=${KNATIVE_EVENTING_VERSION:-1.2.0}
+NAMESPACE=${NAMESPACE:-default}
+BROKER_NAME=${BROKER_NAME:-default}
+KNATIVE_NET_KOURIER_VERSION=${KNATIVE_NET_KOURIER_VERSION:-1.2.0}
+TRIGGERMESH_VERSION=${TRIGGERMESH_VERSION:-v1.18.1}
 
 echo -e "🍿 Installing Knative Serving and Eventing ... \033[0m"
 STARTTIME=$(date +%s)
@@ -56,6 +63,7 @@ until [ $n -ge 2 ]; do
 done
 kubectl wait pod --timeout=-1s --for=condition=Ready -l '!job-name' -n knative-eventing > /dev/null
 
+
 kubectl apply -f - <<EOF
 apiVersion: eventing.knative.dev/v1
 kind: broker
@@ -67,7 +75,6 @@ EOF
 echo -e "🦾 Installing Triggermesh ... \033[0m"
 echo "Setting up Triggermesh"
 kubectl apply -f https://github.com/triggermesh/triggermesh/releases/download/${TRIGGERMESH_VERSION}/triggermesh-crds.yaml
-kubectl wait --for=condition=Established --all crd
 kubectl apply -f https://github.com/triggermesh/triggermesh/releases/download/${TRIGGERMESH_VERSION}/triggermesh.yaml
 kubectl wait pod --timeout=-1s --for=condition=Ready -l '!job-name' -n triggermesh
 kubectl -n ${NAMESPACE} get broker ${BROKER_NAME}

@@ -1,4 +1,4 @@
-# UNTESTED!!!
+# Minikube Quick Install
 
 ```
 minikube start
