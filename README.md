@@ -1,6 +1,6 @@
 # Triggermesh Quick Start
 
-Quickly install Triggermesh on a fresh cluster for development and testing purposes, and then get up to speed with a step-by-step introduction to the individual Triggermesh components. 
+Quickly install Triggermesh on a fresh cluster for development and testing purposes, and then get up to speed with a step-by-step introduction to the individual Triggermesh components.
 
 ## Docker Desktop
 ### Prerequisites
@@ -18,60 +18,6 @@ Run the following:
 ```
 
 **Note** you may need to run `chmod +x ./DockerDesktop.sh` before executing.
-
-
-## Google Cloud !!UNTESTED!!
-### Prerequisites
-
-- Google Cloud Kubernetes Engine running with a cluster and the proper kube .config credentials and context set.
-
-### Install Triggermesh
-Clone or download this repository.
-
-Open a terminal within the `./Install/GoogleCloud` folder.
-
-Run the following:
-```
-./GoogleCloud.sh
-```
-
-**Note** you may need to run `chmod +x ./GoogleCloud.sh` before executing.
-
-## Minikube !!UNTESTED!!
-### Prerequisites
-
-- Minikube running with a cluster and the proper kube .config credentials and context set.
-- A second window with `minikube tunnel` running.
-
-### Install Triggermesh
-Clone or download this repository.
-
-Open a terminal within the `./Install/Minikube` folder.
-
-Run the following:
-```
-./Minikube.sh
-```
-
-**Note** you may need to run `chmod +x ./Minikube.sh` before executing.
-
-## Microsoft Azure AKS !!UNTESTED!!
-### Prerequisites
-
-- Microsoft Azure AKS with a cluster and the proper kube .config credentials and context set.
-
-### Install Triggermesh
-Clone or download this repository.
-
-Open a terminal within the `./Microsoft/Microsoft` folder.
-
-Run the following:
-```
-./Microsoft.sh
-```
-
-**Note** you may need to run `chmod +x ./Microsoft.sh` before executing.
-
 
 ## Next steps.
 
