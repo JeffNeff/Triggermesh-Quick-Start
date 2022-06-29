@@ -38,10 +38,10 @@ Try removing the `PingSource` object and send your own events to Sockeye.
 This is accomplished in several methods, some of the most popular are:
 ```
 curl
-TMDebugger
 curl pod
 ...
 ```
+## TODO add info on curl and curl pod
 
 
 []: # Language: markdown
